@@ -22,15 +22,31 @@ p {
     max-width: 50em;
 }
 
-dl {
-    max-width: 50em;
-}
-
 ul {
     max-width: 50em;
 }
 
+dl {
+    display: grid;
+    grid-template-columns: repeat(2, 25em);
+}
+
+dt {
+    max-width: 50em;
+}
+
 dd {
+    max-width: 50em;
+}
+
+dl>dt {
+    width: 45em;
+    padding-right: 0;
+}
+
+dl>dd {
+    max-width: 25em;
+    padding-left: 0;
     text-align: right;
 }
 
@@ -112,4 +128,9 @@ body#portfolio ul#portfolioItems {
 
 body#portfolio ul#portfolioItems li img {
     max-width: 100%;
+}
+
+body#resume ul {
+    margin-top: 0;
+    padding-left: 1rem;
 }
