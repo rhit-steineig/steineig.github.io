@@ -158,6 +158,10 @@ body#portfolio ul#portfolioItems li img {
     max-width: 100%;
 }
 
+body#portfolio p {
+    padding-left: 2em;
+}
+
 body#resume main ul {
     margin-top: 0;
     padding-left: 1rem;
