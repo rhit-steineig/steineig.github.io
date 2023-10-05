@@ -6,8 +6,8 @@
     --horizontal-space: 3rem;
     --light-color: rgb(167, 232, 190);
     --body-color: #2a376c;
-    --heading-color: #3d1c56;
-    --contrast-color: rgb(223, 197, 65);
+    --heading-color: #321947;
+    --contrast-color: rgb(169, 81, 151);
     --bright-color: rgb(153, 240, 234);
 }
 
@@ -30,6 +30,10 @@ h3 {
     line-height: 1.2;
     font-family: 'Noto Serif', serif;
     color: var(--heading-color);
+}
+
+h1{
+    margin-bottom: 36px;
 }
 
 a {
@@ -59,8 +63,18 @@ body#resume main dl {
     grid-template-columns: repeat(2, 25em);
 }
 
+body#resume h3{
+    margin-bottom: 6px;
+}
+
+body#resume dl{
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+
 body#resume main dt {
     max-width: 50em;
+    margin-top: 8px;
 }
 
 body#resume main dd {
@@ -114,6 +128,7 @@ body>nav {
 body>nav ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 0;
 }
 
 body>nav ul li {
@@ -141,7 +156,6 @@ footer h1 {
 
 body#portfolio ul#portfolioItems {
     display: flex;
-    flex-wrap: wrap;
     flex: 1;
     list-style-type: none;
     padding: 0;
@@ -149,17 +163,28 @@ body#portfolio ul#portfolioItems {
 
 @media screen and (min-width: 23em) {
     body#portfolio ul#portfolioItems li {
-        flex-basis: 48%;
+        flex-basis: 58%;
         padding-right: 2%;
     }
+}
+
+body#about main img {
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 body#portfolio ul#portfolioItems li img {
     max-width: 100%;
 }
 
-body#portfolio p {
-    padding-left: 2em;
+body#portfolio ul>li>h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+body#portfolio ul>li>p {
+    margin-top: 12px;
+    margin-bottom: 18px;
 }
 
 body#resume main ul {
