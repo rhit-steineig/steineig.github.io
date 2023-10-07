@@ -9,5 +9,6 @@ window.onscroll = () => {
 };
 
 topBtn.onclick = () => {
+    console.log("going back to top");
     document.documentElement.scrollTop = 0;
 };
