@@ -7,8 +7,11 @@ window.onscroll = () => {
         topBtn.style.display = "none";
     }
 };
-
-topBtn.onclick = () => {
-    console.log("going back to top");
-    document.documentElement.scrollTop = 0;
-};
+try {
+    topBtn.onclick = () => {
+        console.log("going back to top");
+        document.documentElement.scrollTop = 0;
+    };
+} catch (TypeError) {
+    console.log("A \"back to top\" button does not exist on this page.");
+}
